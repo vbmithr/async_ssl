@@ -19,6 +19,7 @@
   (action (bash "\
 ${CC} ${<} $(< ../bindings/openssl-ccopt) $(< ../bindings/openssl-cclib) \
   -I `dirname ${findlib:ctypes:ctypes_cstubs_internals.h}` \
+  -I /usr/include/openssl-1.0 \
   -I ${ocaml_where} -o ${@}")
    )))
 
