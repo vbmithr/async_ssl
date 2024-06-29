@@ -24,7 +24,7 @@
   (language c)
   (names ffi_generated_stubs)
   (flags
-   (:standard \ -Werror -pedantic -Wall -Wunused)
+   (:standard -Werror -pedantic -Wall -Wunused -Wno-incompatible-pointer-types)
    -w
    (:include ../bindings/openssl-ccopt.sexp)))
  (name async_ssl)
